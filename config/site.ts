@@ -1,20 +1,21 @@
 export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
-  name: "Next.js + NextUI",
-  description: "Make beautiful websites regardless of your design experience.",
+  name: "Kite: Smart Apply Solution",
+  description:
+    "ApplyKite helps you find academic positions and connect with top supervisors, simplifying your path to a Master's or PhD.",
   navItems: [
     {
       label: "Home",
       href: "/",
     },
     {
-      label: "Docs",
-      href: "/docs",
+      label: "Positions",
+      href: "/positions",
     },
     {
-      label: "Pricing",
-      href: "/pricing",
+      label: "Supervisors",
+      href: "/supervisors",
     },
     {
       label: "Blog",
@@ -22,7 +23,19 @@ export const siteConfig = {
     },
     {
       label: "About",
-      href: "/about",
+      href: "/about-us",
+    },
+    {
+      label: "Contact",
+      href: "/contact",
+    },
+    {
+      label: "T&Cs",
+      href: "/terms-and-conditions",
+    },
+    {
+      label: "PrivacyPolicy",
+      href: "/privacy-policy",
     },
   ],
   navMenuItems: [
@@ -59,11 +72,25 @@ export const siteConfig = {
       href: "/logout",
     },
   ],
+
   links: {
-    github: "https://github.com/nextui-org/nextui",
-    twitter: "https://twitter.com/getnextui",
-    docs: "https://nextui.org",
-    discord: "https://discord.gg/9b6yyZKmH4",
-    sponsor: "https://patreon.com/jrgarciadev",
+    webapp: "https://dashboard.applykite.com",
+    telegram: "https://t.me/ApplyKiteBot",
+    twitter: "https://x.com/ApplyKite",
+    instagram: "https://www.instagram.com/applykite/",
+    linkedin: "https://www.linkedin.com/company/applykite",
+    email: "support@applykite.com",
+    telegramAdmin: "https://t.me/ApplyKite",
+  },
+};
+
+export const endpoints = {
+  admin: {
+    blog: {
+      getAll: "/api/posts", //
+      getDetail: "/api/posts", //
+      addComment: "/api/posts/posts", // /{post_id}/comment Method: POST //! NO TOKEN
+      likeComment: "/api/posts/posts", // /{post_id}/like Method: POST //! NO TOKEN
+    },
   },
 };

@@ -27,7 +27,7 @@ export default function Home() {
             radius: "full",
             variant: "shadow",
           })}
-          href={siteConfig.links.docs}
+          href={siteConfig.links.webapp}
         >
           Get Started
         </Link>

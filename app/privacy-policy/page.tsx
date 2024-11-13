@@ -1,9 +1,5 @@
-import { title } from "@/components/primitives";
+import PrivacyPolicyContent from "@/components/features/privacy/PrivacyPolicyContent";
 
 export default function PrivacyPolicy() {
-  return (
-    <div>
-      <h1 className={title({ color: "violet" })}>PrivacyPolicy</h1>
-    </div>
-  );
+  return <PrivacyPolicyContent />;
 }

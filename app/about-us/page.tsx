@@ -1,9 +1,5 @@
-import { title } from "@/components/primitives";
+import AboutUsContent from "@/components/features/about/AboutUsContent";
 
 export default function AboutUs() {
-  return (
-    <div>
-      <h1 className={title({ color: "violet" })}>About Us</h1>
-    </div>
-  );
+  return <AboutUsContent />;
 }

@@ -1,9 +1,5 @@
-import { title } from "@/components/primitives";
+import TermsContent from "@/components/features/terms/TermsContent";
 
 export default function TermsAndConditions() {
-  return (
-    <div>
-      <h1 className={title({ color: "violet" })}>TermsAndConditions</h1>
-    </div>
-  );
+  return <TermsContent />;
 }

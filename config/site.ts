@@ -1,4 +1,5 @@
 export type SiteConfig = typeof siteConfig;
+export const HOST_API = process.env.NEXT_PUBLIC_BASE_URL;
 
 export const siteConfig = {
   name: "Kite: Smart Apply Solution",
